@@ -1,0 +1,332 @@
+<style>
+    /* global */
+    
+    .large-father-box {
+        background-color: #fff;
+    }
+    
+    .title-large-global {
+        text-align: center;
+        width: 68%;
+        margin: auto;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    
+    .title-large-global :nth-child(1) {
+        font-size: 16px;
+    }
+    
+    .title-large-global :nth-child(2) {
+        font-size: 25px;
+        margin: 10px 0 0 0;
+        font-weight: 600;
+    }
+    
+    .title-large-global :nth-child(3) {
+        font-size: 14px;
+        color: #c1b8b8;
+    }
+    /* end global */
+    /* block model */
+    
+    .father-box-2 {
+        padding: var(--padding--content--custom);
+    }
+    
+    .peole-data {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    
+    .peole-data>i {
+        color: gray;
+        font-size: 13px;
+    }
+    
+    .box-icon-people {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    .box-icon-people>i {
+        margin: 0 5px;
+    }
+    /* End block model */
+    /* block-3 */
+    
+    .father-box-3 {
+        margin-top: 68px;
+        height: 425px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+        color: white;
+        text-align: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .father-box-3 :nth-child(2) {
+        font-size: 37px;
+    }
+    
+    .father-box-3 :nth-child(3) {
+        font-size: 16px;
+        color: #f1e9e9;
+        font-weight: 500;
+        margin: 15px 0px;
+    }
+    
+    .father-box-3 :nth-child(4) {
+        font-size: 14px;
+        color: #080202;
+        font-weight: 500;
+    }
+    /*End block-3 */
+    /* block 04 */
+    
+    .block-04 {
+        /* margin: 102px 0; */
+        padding: var(--padding--content--custom);
+        padding-top: 102px;
+        padding-bottom: 102px;
+    }
+    
+    .item-father-box-block-04 {
+        text-align: center;
+    }
+    
+    .item-father-box-block-04 :nth-child(1) {
+        font-size: 108px;
+        line-height: 0;
+    }
+    
+    .item-father-box-block-04 :nth-child(3) {
+        font-size: 13px;
+        color: #808080ab;
+        margin-top: 10px;
+    }
+    /* End block 04 */
+    /* block 05  */
+    
+    .block-05 {
+        padding: var(--padding--content--custom);
+    }
+    
+    .block-05 .one-data {
+        background-color: #fff;
+        padding: 35px 15px;
+    }
+    
+    .item-father-box-block-05 {
+        text-align: center;
+        padding: 35px 15px;
+    }
+    
+    .item-father-box-block-05 .img-data {
+        width: 68%;
+        margin: auto;
+    }
+    
+    .item-father-box-block-05 .img-data img {
+        width: 100%;
+    }
+    
+    .item-father-box-block-05 :nth-child(2) {
+        margin-top: 15px;
+        min-height: 55px;
+    }
+    
+    .item-father-box-block-05 :nth-child(3) {
+        margin-top: 10px;
+        color: #808080ab;
+        font-size: 13px;
+    }
+    
+    .item-father-box-block-05 :nth-child(4) {
+        background-color: black;
+        padding: 5px;
+        margin-top: 10px;
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    /* End block 05  */
+    /* block 06 */
+    
+    .layout_center .block-06 {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 68px;
+    }
+    
+    .block-06 {
+        padding: var(--padding--content--custom);
+        padding-top: 102px;
+        padding-bottom: 102px;
+        margin-top: 50px;
+    }
+    
+    .item-father-box-block-06 {
+        display: flex;
+    }
+    
+    .item-father-box-block-06 :nth-child(1) {
+        font-size: 30px;
+        padding-right: 10px;
+    }
+    
+    .item-father-box-block-06 div :nth-child(1) {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+    
+    .item-father-box-block-06 div :nth-child(2) {
+        font-size: 13px;
+        margin-top: 10px;
+        color: #808080ab;
+    }
+    /* End block 06 */
+    /* Responsive */
+    
+    @media (min-width:320px) and (max-width:543px) {
+        .father-box-3 {
+            height: 579px;
+        }
+    }
+</style>
+<div class="large-father-box">
+    <div class="title-large-global">
+        <i>About Us</i>
+        <h6>GET TO KNOW US </h6>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+        </p>
+    </div>
+
+
+    <div class="box-repeat-data father-box-2" ng-init="getDataPagination()">
+        <div class="box-dir-paginate-data" dir-paginate="one_data in data_get |orderBy :optionsModelDisplay.hienthi| filter:tukhoa |itemsPerPage:optionsModelQuantity.PageSize">
+            <!-- 1 -->
+            <div class="one-data">
+                <!-- box-ratio-xx -->
+                <div class="box-ratio ratio-box-content ">
+                    <div class="image2" style="background-image:url({{one_data.posts_img}});"></div>
+                </div>
+                <div class="peole-data">
+                    <H6 class="padding-t-15">{{one_data.data_name}}</H6>
+                    <i class="margin-t-15">{{one_data.data_vitri}}</i>
+                    <div class="box-icon-people">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-invision"></i>
+                        <i class="fa-brands fa-yahoo"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- block-3 -->
+    <div class="father-box-3 img-background" style="background-image:url(source-data/background/home-left-parallax.jpg) ;">
+        <i>Get inspired</i>
+        <h6>A Trendy Quote</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero eos facilis, nihil aliquam molestiae beatae. Sed aperiam illum, debitis nesciunt libero quam. Dolorum excepturi repellat cupiditate exercitationem. Molestiae, atque.</p>
+        <i>-Valentino Chanel</i>
+    </div>
+    <!-- block-3 -->
+    <!-- block-04 -->
+    <div class="box-repeat-data block-04" ng-init="getData_2()">
+        <div class="box-dir-paginate-data" dir-paginate="one_data in data_get_2 |orderBy :optionsModelDisplay.hienthi| filter:tukhoa |itemsPerPage:optionsModelQuantity.PageSize">
+            <!-- 1 -->
+            <div class="one-data">
+                <div class="item-father-box-block-04">
+                    <h1>{{one_data.data_number}}</h1>
+                    <h6>
+                        {{one_data.data_name}}
+
+                    </h6>
+                    <p>
+                        {{one_data.data_content}}
+                    </p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End block-04 -->
+</div>
+<div class="title-large-global">
+    <i>About Us</i>
+    <h6>GET TO KNOW US </h6>
+
+</div>
+<div class="large-father-box" style="background-color:transparent;">
+    <!-- block 05 -->
+
+    <div class="box-repeat-data block-05" ng-init="getData_3()">
+        <div class="box-dir-paginate-data" dir-paginate="one_data in data_get_3 |orderBy :optionsModelDisplay.hienthi| filter:tukhoa |itemsPerPage:optionsModelQuantity.PageSize">
+            <!-- 1 -->
+            <div class="one-data">
+                <div class="item-father-box-block-05">
+                    <div class="img-data">
+                        <img src="{{one_data.data_img}}" alt="">
+                    </div>
+                    <h6>{{one_data.data_name}}</h6>
+                    <p>{{one_data.data_content}}</p>
+                    <a href="" class="button">
+                    learn more
+                </a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- End block 05 -->
+</div>
+
+<div class="large-father-box">
+    <div class="box-repeat-data-two block-06" ng-init="getData_04()">
+        <div class="box-dir-paginate-data" dir-paginate="one_data in data_get_04 |orderBy :optionsModelDisplay.hienthi| filter:tukhoa |itemsPerPage:optionsModelQuantity.PageSize">
+            <!-- 1 -->
+            <div class="one-data item-father-box-block-06">
+                <i class="{{one_data.data_icon}}"></i>
+                <div>
+                    <h6>{{one_data.data_name}} </h6>
+                    <p>{{one_data.data_content}} </p>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 02.4 Khối pagination -->
+<!-- <div class="pagination_by_project left-start" ng-include="'content-admin-panel/general-ingredients/view-pagination/pagination.html'" scope="" onload=""></div> -->
+<!-- 02.4 End khối pagination -->

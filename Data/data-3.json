@@ -1,0 +1,22 @@
+[{
+        "data_img": "source-data/service/service-table-image-6.jpg",
+        "data_name": "SEIZE THE MOMENT",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut"
+    },
+    {
+        "data_img": "source-data/service/service-table-image-7.jpg",
+        "data_name": "SUPREME BLOGGING",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut"
+    },
+    {
+        "data_img": "source-data/service/service-table-image-8.jpg",
+        "data_name": "REMARKABLE STYLE",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut"
+    },
+    {
+        "data_img": "source-data/service/service-table-image-9.jpg",
+        "data_name": "IMAGINE AND CREATE",
+        "data_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut"
+    }
+
+]

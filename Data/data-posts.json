@@ -1,0 +1,22 @@
+[{
+        "data_name": "ALLISON WU",
+        "data_vitri": "Creative Director",
+        "posts_img": "source-data/people/About-us-Team-1.jpg"
+    },
+    {
+        "data_name": "LAVINIA SANTOS",
+        "data_vitri": "Designer",
+        "posts_img": "source-data/people/About-us-Team-2.jpg"
+    },
+    {
+        "data_name": "JENNIE GIBBS",
+        "data_vitri": "Founder",
+        "posts_img": "source-data/people/About-us-Team-3.jpg"
+    },
+    {
+        "data_name": "SHIRLEY FLORES",
+        "data_vitri": "Marketing Director",
+        "posts_img": "source-data/people/About-us-Team-4.jpg"
+    }
+
+]
